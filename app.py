@@ -49,13 +49,13 @@ cursor, db = get_database_connection()
  
 # st.write(databases)
  
-cursor.execute('''CREATE TABLE information (id varchar(255),
-                                              studentname varchar(255),
-                                              re_date date,
-												status varchar(255))''')
-cursor.execute("Select * from information")
-tables = cursor.fetchall()
-st.write(tables)
+# cursor.execute('''CREATE TABLE information (id varchar(255),
+#                                               studentname varchar(255),
+#                                               re_date date,
+# 												status varchar(255))''')
+# cursor.execute("Select * from information")
+# tables = cursor.fetchall()
+# st.write(tables)
 
 def admin():
     username=st.sidebar.text_input('Username',key='user')
